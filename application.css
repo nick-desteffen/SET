@@ -1,0 +1,43 @@
+#main{
+  height: 460px;
+  width: 640px;
+}
+
+.card{
+  border: 1px solid #000;
+  border-radius: 7px;
+  float: left;
+  padding: 20px;
+  margin: 10px;
+  width: 150px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.shape{
+  float: left;
+  display: block;
+  margin: 0 5px;
+}
+
+.diamond {
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-bottom: 35px solid red;
+  position: relative;
+  top: -35px;
+}
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -25px; top: 35px;
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-top: 35px solid red;
+}
+
+.squiggle{
+  fill: #94d31b;
+}
